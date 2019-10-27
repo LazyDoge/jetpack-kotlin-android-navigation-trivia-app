@@ -43,6 +43,8 @@
         <action
             android:id="@+id/action_gameFragment_to_gameOverFragment"
             app:destination="@id/gameOverFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
             app:popUpTo="@+id/gameFragment"
             app:popUpToInclusive="true" />
         />
@@ -55,6 +57,8 @@
         <action
             android:id="@+id/action_gameFragment_to_gameWonFragment"
             app:destination="@id/gameWonFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left"
             app:popUpTo="@+id/gameFragment"
             app:popUpToInclusive="true" />
         <!-- TODO (04) Add the sliding animation to the gameFragment to gameWonFragment action
@@ -88,6 +92,8 @@
         <action
             android:id="@+id/action_gameOverFragment_to_gameFragment"
             app:destination="@id/gameFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
             app:popUpTo="@+id/titleFragment" />
         <!-- TODO (06) Add the sliding animation to the gameOverFragment to gameFragment action
              Go to the navigation editor and select slide_in_left for Enter and Pop Enter
